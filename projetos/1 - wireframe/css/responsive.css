@@ -1,0 +1,31 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {
+
+  /******HEADER******/
+  header .container nav {
+    display: none;
+  }
+
+  header .container .menu-mobile {
+    display: block;
+  }
+
+  /******SECTION-HERO******/
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 480px) {
+
+  /******HEADER******/
+  header .logo {
+    max-width: 13rem;
+    /*largura definida no container e não na img*/
+  }
+
+  /******SECTION-HERO******/
+}
