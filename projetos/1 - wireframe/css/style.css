@@ -69,3 +69,7 @@ header .container nav ul li:not(li:last-child) {
   justify-content: center;
   align-items: center;
 }
+
+.section-hero .container .text .btn-primary {
+  padding: 1.7rem 3.7rem;
+}
