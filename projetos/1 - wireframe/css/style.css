@@ -73,3 +73,75 @@ header .container nav ul li:not(li:last-child) {
 .section-hero .container .text .btn-primary {
   padding: 1.7rem 3.7rem;
 }
+
+/******SECTION CARDS******/
+.section-cards {
+  padding: 7.2rem 0;
+  background: var(--gray-colors-100);
+}
+
+.section-cards .container .main-area {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 12.5rem;
+}
+
+.section-cards .container .main-area p {
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--white-colors-text);
+}
+
+.section-cards .container .main-area .title h2 {
+  margin-bottom: 0.8rem;
+}
+
+.section-cards .container .main-area .title.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-cards .container .main-area .all-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.8rem;
+}
+
+.section-cards .container .main-area .all-cards .card {
+  background: rgba(28, 29, 31, 0.5);
+  width: 100%;
+  max-width: 38.4rem;
+  height: 38.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-cards .container .main-area .all-cards .card.white {
+  background-color: var(--white);
+}
+
+.section-cards .container .main-area .all-cards .card.white h3 {
+  color: var(--gray-colors-100);
+}
+
+.section-cards .container .main-area .all-cards .card.white p {
+  color: var(--gray-colors-300);
+}
+
+.section-cards .container .main-area .all-cards .card .info {
+  max-width: 28.8rem;
+  margin-top: 4rem;
+}
+
+.section-cards .container .main-area .all-cards .card .info h3 {
+  text-align: center;
+}
+
+.section-cards .container .main-area .all-cards .card .info p {
+  text-align: center;
+  margin-top: 0.8rem;
+  line-height: 150%;
+}
