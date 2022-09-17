@@ -5,6 +5,8 @@ header {
   background-color: var(--gray-colors-800);
 
   display: flex;
+  position: fixed;
+  z-index: 1000;
 }
 
 header .container {
@@ -40,6 +42,7 @@ header .container nav ul li:not(li:last-child) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 8.8rem;
 }
 
 .section-hero .container .text {
@@ -75,6 +78,7 @@ header .container nav ul li:not(li:last-child) {
 }
 
 /******SECTION CARDS******/
+/**MAIN AREA**/
 .section-cards {
   padding: 7.2rem 0;
   background: var(--gray-colors-100);
@@ -144,4 +148,63 @@ header .container nav ul li:not(li:last-child) {
   text-align: center;
   margin-top: 0.8rem;
   line-height: 150%;
+}
+
+/**SECOND AREA**/
+.section-cards .container .second-area {
+  margin-top: 9rem;
+}
+
+.section-cards .container .second-area .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.6rem;
+}
+
+.section-cards .container .second-area .top .title p {
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--white-colors-text);
+}
+
+.section-cards .container .second-area .all-imgs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.section-cards .container .second-area .all-imgs .image {
+  width: 17.6rem;
+  height: 11.2rem;
+  background: rgba(28, 29, 31, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******SECTION NEWSLETTER******/
+.section-newsletter {
+  padding: 15.2rem 0;
+  background-color: var(--gray-colors-200);
+}
+
+.section-newsletter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-newsletter .container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-newsletter .container p {
+  max-width: 69.4rem;
+  color: var(--white-colors-text);
+  text-align: center;
+  margin-bottom: 4rem;
 }

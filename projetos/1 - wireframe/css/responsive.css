@@ -14,6 +14,15 @@
   .section-cards .container .main-area .all-cards .card {
     width: 32%;
   }
+
+  /*SECOND AREA*/
+  .section-cards .container .second-area .all-imgs {
+    gap: 2rem 2%;
+  }
+
+  .section-cards .container .second-area .all-imgs .image {
+    width: 23.5%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -75,11 +84,35 @@
 
 @media (max-width: 768px) {
 
-  /******SECTION-HERO******/
+  /******SECTION-CARDS******/
+  /*SECOND AREA*/
+  .section-cards .second-area .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-cards .second-area .top .title {
+    margin-bottom: 2rem;
+  }
+
+  .section-cards .second-area .top .title h2, .section-cards .second-area .top .title p {
+    text-align: center;
+  }
 
 }
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+
+  /******SECTION-CARDS******/
+  /*SECOND AREA*/
+  .section-cards .container .second-area .all-imgs {
+    gap: 0.5rem 2%;
+  }
+
+  .section-cards .container .second-area .all-imgs .image {
+    width: 49%;
+  }
+}
 
 @media (max-width: 480px) {
 
@@ -115,4 +148,12 @@
     padding: 4rem 0;
   }
 
+  .section-cards .container .second-area {
+    margin-top: 4rem;
+  }
+
+  /******SECTION-NEWSLETTER******/
+  .section-newsletter {
+    padding: 4rem 0;
+  }
 }
