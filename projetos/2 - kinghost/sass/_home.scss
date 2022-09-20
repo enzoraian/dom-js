@@ -89,43 +89,140 @@
 }
 
 .section-resources {
-  padding: 5.8rem 0;
+  padding-top: 14.9rem;
+  padding-bottom: 9.9rem;
 
   .container {
-    .title {
+    .top {
       @include flex(row, space-between, center);
-      width: 100%;
       margin-bottom: 5.3rem;
 
       h2 {
-        max-width: 52rem;
+        max-width: 54rem;
+        color: $gray-01;
         font-weight: 700;
         font-size: 3.2rem;
         line-height: 130%;
-        color: $gray-01;
       }
 
       p {
+        color: $gray-02;
         font-weight: 500;
         line-height: 150%;
-        color: $gray-02;
       }
     }
 
-    .images {
-      @include flex(row, center, center);
-      width: 100%;
+    .content {
+      @include flex(row, space-between, flex-start);
 
-      .image {
-        background-color: rgb(197, 190, 220, 0.1);
+      .card-featured {
+        width: 100%;
+        max-width: 28rem;
+        height: 32rem;
+        padding: 4.1rem 4.2rem 6.8rem 3.4rem;
+        background: rgb(197, 190, 220, 0.1);
+        border-radius: 1.2rem;
 
         .icon {
           @include flex(row, center, center);
           width: 100%;
           max-width: 6.4rem;
           height: 6.4rem;
-          background-color: $white;
+          background: #fff;
           border-radius: 1.2rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      /*OTHER 3 CARDS*/
+      ul {
+        @include flex(row, space-between, flex-start);
+        width: 100%;
+        max-width: 90.4rem;
+        border-bottom: 2px solid $purple;
+
+        li {
+          width: 100%;
+          max-width: 28rem;
+          height: 32rem;
+          padding: 4.1rem 4.2rem 6.4rem 3.3rem;
+
+          .icon {
+            @include flex(row, center, center);
+            width: 100%;
+            max-width: 6.4rem;
+            height: 6.4rem;
+            background: rgb(197, 190, 220, 0.1);
+            border-radius: 1.2rem;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
+      .info {
+        h3 {
+          color: $purple;
+          font-weight: 800;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          color: $gray-02;
+          font-weight: 400;
+          line-height: 165%;
+        }
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    .container {
+
+      .content {
+        flex-direction: column;
+
+        .card-featured {
+          @include flex(column, center, center);
+          max-width: 100%;
+        }
+
+        ul {
+          max-width: 100%;
+          flex-direction: column;
+
+          li {
+            @include flex(column, center, center);
+            max-width: 100%;
+          }
+        }
+      }
+
+      .info {
+        max-width: 100%;
+
+        h3,
+        p {
+          text-align: center;
+        }
+      }
+
+
+    }
+  }
+
+  @include responsive(600px) {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    .container {
+      .top {
+        flex-direction: column;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 2rem;
         }
       }
     }
