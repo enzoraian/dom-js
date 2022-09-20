@@ -87,3 +87,47 @@
     margin-top: 8rem;
   }
 }
+
+.section-resources {
+  padding: 5.8rem 0;
+
+  .container {
+    .title {
+      @include flex(row, space-between, center);
+      width: 100%;
+      margin-bottom: 5.3rem;
+
+      h2 {
+        max-width: 52rem;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 130%;
+        color: $gray-01;
+      }
+
+      p {
+        font-weight: 500;
+        line-height: 150%;
+        color: $gray-02;
+      }
+    }
+
+    .images {
+      @include flex(row, center, center);
+      width: 100%;
+
+      .image {
+        background-color: rgb(197, 190, 220, 0.1);
+
+        .icon {
+          @include flex(row, center, center);
+          width: 100%;
+          max-width: 6.4rem;
+          height: 6.4rem;
+          background-color: $white;
+          border-radius: 1.2rem;
+        }
+      }
+    }
+  }
+}
