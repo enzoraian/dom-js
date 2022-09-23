@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transversing</title>
+</head>
+
+<body>
+
+  <!--NAVEGANDO DOM-->
+  <div></div>
+  <h1>Título</h1>
+  <p>Parágrafo</p>
+
+  <!--Criando, Movendo e Removendo Elementos-->
+
+  <div class="div-01">
+    <h1 class="titulo-01">Título 1</h1>
+  </div>
+
+
+  <div class="div-02">
+    <h2 class="titulo-02">Título 2</h2>
+  </div>
+</body>
+<script>
+
+  // Navegando Dom
+  const titulo = document.querySelector('h1')
+
+  // body
+  console.log(titulo.parentElement)
+
+  // html 
+  console.log(titulo.parentElement.parentElement)
+
+  // div 
+  console.log(titulo.previousElementSibling)
+
+  // p
+  console.log(titulo.nextElementSibling)
+
+
+  // Criando, Movendo e Removendo Elementos
+  const elemento1 = document.querySelector('.div-01')
+  const elemento2 = document.querySelector('.div-02')
+  const titulo1 = document.querySelector('.titulo-01')
+  const titulo2 = document.querySelector('.titulo-02')
+
+  //Movendo
+  elemento2.appendChild(titulo1)
+
+  // Criando
+  const novoTitulo = document.createElement('h3')
+  novoTitulo.innerText = 'Título 3'
+  elemento1.appendChild(novoTitulo)
+
+
+</script>
+
+</html>

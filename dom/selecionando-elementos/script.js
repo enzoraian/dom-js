@@ -6,6 +6,8 @@ console.log(textos) // retorna um NodeList com todos os elementos
 let texto1 = document.querySelector(".texto")
 console.log(texto1) // retorna apenas o primeiro
 
+// document.getElementById()
+// document.getElementByClassName()
 
 // Evento
 texto1.addEventListener("click", () => {
