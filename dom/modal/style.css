@@ -8,21 +8,18 @@
   font-family: "Arial", sans-serif;
 }
 
-body {
-  margin: 5rem;
-}
 
 .button {
   width: 25rem;
   height: 6rem;
+
   background-color: transparent;
   border-radius: 0.5rem;
-  border: 2px solid black;
+  border: 0.2rem solid black;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2.2rem;
-
   transition: all 0.3s;
 }
 
@@ -31,17 +28,37 @@ body {
   color: white;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+/*Implementação*/
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   transition: all 0.3s;
+
+  /*principal*/
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*principal*/
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal.active .box {
+  transform: translateY(0);
 }
 
 .modal .overlay {
@@ -50,6 +67,44 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .box {
+  /*posicionar botão fechar*/
+  position: relative;
+  z-index: 2;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 5px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*efeito*/
+  transform: translateY(20px);
+  transition: transform 0.3s;
+}
+
+.modal .box .close {
+  position: absolute;
+  top: -51px;
+  right: 0;
+
+  width: 10rem;
+  height: 4.3rem;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
