@@ -8,6 +8,9 @@
   font-family: "Arial", sans-serif;
 }
 
+body {
+  height: 200vh;
+}
 
 .button {
   width: 25rem;

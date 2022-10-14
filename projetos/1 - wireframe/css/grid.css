@@ -1,8 +1,0 @@
-.container {
-  width: 100%;
-  max-width: 124.6rem;
-  /* total - espac dir/esq + padding mob*/
-  padding: 0 1.5rem;
-  /*padding right left padrão mobile*/
-  margin: 0 auto;
-}
